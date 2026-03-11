@@ -1,130 +1,145 @@
-🚗 BMW Cars Market Analysis and Price Prediction
+# 🚗 BMW Car Price Prediction using Machine Learning
 
-Dataset source: Kaggle – BMW Cars Market Dataset
+This project performs **Exploratory Data Analysis (EDA)** and builds a **Machine Learning pipeline** to predict BMW car prices using a dataset from Kaggle.
 
-This project demonstrates a complete Exploratory Data Analysis (EDA) and Machine Learning workflow using a BMW cars dataset. The goal is to analyze the data and build models that can accurately predict the price of BMW cars based on various features.
+The notebook demonstrates a complete **end-to-end data science workflow**, including data cleaning, visualization, preprocessing, model training, and evaluation.
 
-The notebook covers the full data science pipeline, including data loading, cleaning, visualization, preprocessing, model training, and evaluation.
+---
 
-📊 Project Workflow
+# 📊 Dataset
 
-This notebook demonstrates:
+Dataset Source: **Kaggle – BMW Cars Market Dataset**
 
-Data loading using Pandas
+The dataset contains information about BMW cars such as:
 
-Data cleaning and handling missing values
+- Model
+- Mileage
+- Year
+- Transmission
+- Fuel type
+- Engine size
+- Price
 
-Exploratory Data Analysis (EDA)
+Target variable:
+- Price_usd
 
-Feature preprocessing using Scikit-learn
+---
 
-Training machine learning models
+# 🧠 Project Workflow
 
-Model performance evaluation
+The project follows a standard **Machine Learning pipeline**:
 
-📂 Dataset
+### 1️⃣ Data Loading
+- Load dataset using **Pandas**
 
-The dataset contains information about BMW cars available in the market. Important features include:
+### 2️⃣ Data Cleaning
+- Remove duplicate records
+- Handle missing values
 
-Model
+### 3️⃣ Exploratory Data Analysis (EDA)
+- Dataset summary statistics
+- Distribution plots
+- Correlation heatmap
 
-Year
+### 4️⃣ Feature Engineering
+- Identify numerical and categorical features
 
-Mileage
+### 5️⃣ Data Preprocessing
+Using **Scikit-learn pipelines**
 
-Transmission
+- StandardScaler for numerical features
+- OneHotEncoder for categorical features
 
-Fuel Type
+### 6️⃣ Model Training
+Two machine learning models are trained:
 
-Engine Size
+- **Linear Regression**
+- **Random Forest Regressor**
 
-Price
+### 7️⃣ Model Evaluation
 
-The target variable in this project is:
+Models are evaluated using:
 
-price
-📈 Exploratory Data Analysis
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
 
-Several visualizations were created to understand the dataset:
+---
 
-Histogram plots for numerical feature distributions
+# 📈 Technologies Used
 
-Correlation heatmap to analyze relationships between variables
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
-Price distribution analysis
+---
 
-EDA helps identify patterns, trends, and relationships in the dataset before building machine learning models.
-
-⚙️ Machine Learning Pipeline
-
-The project uses Scikit-learn pipelines to combine preprocessing and model training steps.
-
-Feature Preprocessing
-
-Two types of features were processed:
-
-Numerical Features
-
-Standardized using StandardScaler
-
-Categorical Features
-
-Encoded using OneHotEncoder
-
-A ColumnTransformer was used to apply transformations to the correct feature types.
-
-🤖 Models Used
-
-Two regression models were trained:
-
-Linear Regression
-
-A baseline regression model used to establish a simple relationship between features and car price.
-
-Random Forest Regressor
-
-An ensemble learning method that improves prediction accuracy by combining multiple decision trees.
-
-📊 Model Performance
-Linear Regression
-
-MAE: 4843.62
-RMSE: 7142.49
-R² Score: 0.945
-
-Random Forest
-
-MAE: 3390.52
-RMSE: 4772.16
-R² Score: 0.976
-
-The Random Forest model performed better, achieving lower prediction errors and a higher R² score.
-
-🛠️ Technologies Used
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
-Scikit-learn
-
-📂 Project Structure
+# 📂 Project Structure
 BMW-Car-Price-Prediction
 │
 ├── bmw_cars.csv
-├── BMW_EDA_ML.ipynb
-└── README.md
-🎯 Conclusion
+├── bmw_price_prediction.ipynb
+├── README.md
 
-This project demonstrates a typical machine learning workflow for a regression problem. The analysis shows that ensemble models like Random Forest can capture complex patterns in the dataset and produce more accurate predictions compared to simple linear models.
 
-👨‍💻 Author
+---
 
-Gulfam Hussain
-Master’s Student in Data Science
+# ⚙️ Installation
+
+Clone the repository:
+git clone https://github.com/yourusername/BMW-Car-Price-Prediction.git
+
+
+---
+
+# 📊 Example Results
+
+The models are evaluated using standard regression metrics.
+
+Example output:
+<img width="1180" height="352" alt="image" src="https://github.com/user-attachments/assets/aeede4d4-8642-4c42-b896-636381414290" />
+<img width="1179" height="340" alt="image" src="https://github.com/user-attachments/assets/4acb86b4-9fdd-4fb1-828b-b7e560f396d8" />
+
+Random Forest typically performs better because it can capture **non-linear relationships in the data**.
+
+---
+
+# 🎯 Learning Objectives
+
+This project demonstrates:
+
+- Real-world **EDA techniques**
+- **Feature preprocessing pipelines**
+- **Machine Learning model training**
+- **Model evaluation metrics**
+- Building a **complete data science workflow**
+
+---
+
+# 📌 Future Improvements
+
+Possible enhancements:
+
+- Hyperparameter tuning
+- Feature importance analysis
+- Model comparison with XGBoost / Gradient Boosting
+- Deployment using Flask or FastAPI
+- Interactive dashboard using Streamlit
+
+---
+
+# 👨‍💻 Author
+
+**Gulfam Hussain**
+
+Master's Student in Data Science  
+Interested in **Data Analytics, Machine Learning, and AI**
+
+---
+
+# ⭐ If you like this project
+
+Give this repository a **star ⭐ on GitHub**
